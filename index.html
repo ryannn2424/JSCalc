@@ -16,37 +16,39 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="row1">
-            <p class="output-number">255</p>
-        </div>
-        <div class="row2">
-            <button class="normal-button light-button">AC</button>
-            <button class="normal-button light-button">⁺∕₋</button>
-            <button class="normal-button light-button">%</button>
-            <button class="normal-button orange-button">÷</button>
-        </div>
-        <div class="row3">
-            <button class="normal-button light-button">7</button>
-            <button class="normal-button light-button">8</button>
-            <button class="normal-button light-button">9</button>
-            <button class="normal-button orange-button">×</button>
-        </div>
-        <div class="row4">
-            <button class="normal-button light-button">4</button>
-            <button class="normal-button light-button">5</button>
-            <button class="normal-button light-button">6</button>
-            <button class="normal-button orange-button">-</button>
-        </div>
-        <div class="row5">
-            <button class="normal-button light-button">1</button>
-            <button class="normal-button light-button">2</button>
-            <button class="normal-button light-button">3</button>
-            <button class="normal-button orange-button">+</button>
-        </div>
-        <div class="row6">
-            <button class="long-button dark-button">0</button>
-            <button class="normal-button light-button">.</button>
-            <button class="normal-button orange-button">=</button>
+        <div id="wrapper" class="background">
+            <div class="row1">
+                <p class="output-number" id="output">0</p>
+            </div>
+            <div class="row2">
+                <button class="normal-button light-button" onclick="all_clear()">AC</button>
+                <button class="normal-button light-button" onclick="change_sign()">⁺∕₋</button>
+                <button class="normal-button light-button" onclick="percent()">%</button>
+                <button class="normal-button orange-button" onclick="divide()">÷</button>
+            </div>
+            <div class="row3">
+                <button class="normal-button light-button" onclick="append_number(number, '7')">7</button>
+                <button class="normal-button light-button" onclick="append_number(number, '8')">8</button>
+                <button class="normal-button light-button" onclick="append_number(number, '9')">9</button>
+                <button class="normal-button orange-button" onclick="multiply()">×</button>
+            </div>
+            <div class="row4">
+                <button class="normal-button light-button" onclick="append_number(number, '4')">4</button>
+                <button class="normal-button light-button" onclick="append_number(number, '5')">5</button>
+                <button class="normal-button light-button" onclick="append_number(number, '6')">6</button>
+                <button class="normal-button orange-button" onclick="subtract()">-</button>
+            </div>
+            <div class="row5">
+                <button class="normal-button light-button" onclick="append_number(number, '1')">1</button>
+                <button class="normal-button light-button" onclick="append_number(number, '2')">2</button>
+                <button class="normal-button light-button" onclick="append_number(number, '3')">3</button>
+                <button class="normal-button orange-button" onclick="add()">+</button>
+            </div>
+            <div class="row6">
+                <button class="long-button dark-button" onclick="append_number(number, '0')">0</button>
+                <button class="normal-button light-button" onclick="decimal()">.</button>
+                <button class="normal-button orange-button" onclick="calculate()">=</button>
+            </div>
         </div>
         <script src="script.js" async defer></script>
     </body>

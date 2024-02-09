@@ -1,11 +1,30 @@
+#wrapper{
+    position: relative;
+    width: 224px;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.background{
+    background-color: #121212;
+}
+
 .output-number{
     font-size: 30px;
-    text-align: right;
-    margin-right: 51.10%;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-top: 3px;
 }
 
 .normal-button{
     border-radius: 100%;
+    border: none;
     height: 50px;
     width: 50px;
     margin: 2px;
@@ -19,6 +38,7 @@
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    border: none;
     height: 50px;
     width: 107px;
     margin: 2px;
